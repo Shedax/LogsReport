@@ -1,0 +1,1 @@
+logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\2\2.stdout: missing "Solver finished at"logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\3\3.stdout(440): slv : error: Isothermal cavitation pseudo transient corrector = -1

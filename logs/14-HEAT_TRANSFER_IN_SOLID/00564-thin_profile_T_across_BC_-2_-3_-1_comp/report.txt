@@ -1,0 +1,1 @@
+logs\14-HEAT_TRANSFER_IN_SOLID\00564-thin_profile_T_across_BC_-2_-3_-1_comp\ft_run\1\1.stdout: missing "Solver finished at"
