@@ -624,3 +624,6 @@ alg :  symbolic_PardisoLU            0.000  1
 alg :  update_mg_status              0.000  3
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 15-JOULE_HEATING_IN_SOLID/00011-_-1_cond_-3_R/
+logs\15-JOULE_HEATING_IN_SOLID\00011-_-1_cond_-3_R\ft_run\1\1.stdout(475): Voltage_Error:		min = 0 V		max = 0.04 V

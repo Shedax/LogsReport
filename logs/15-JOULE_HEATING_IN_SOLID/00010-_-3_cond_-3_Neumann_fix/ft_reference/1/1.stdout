@@ -584,3 +584,5 @@ alg :  solve_MG                      0.000  1
 alg :  update_mg_status              0.000  1
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 15-JOULE_HEATING_IN_SOLID/00010-_-3_cond_-3_Neumann_fix/

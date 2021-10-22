@@ -1335,3 +1335,6 @@ alg :  solve_MG                      0.007  10
 alg :  update_mg_status              0.000  10
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 13-ROTATED_FLOWS/00061-RRF-u_R_0_IW_ref_boundary_lev_2/
+logs\13-ROTATED_FLOWS\00061-RRF-u_R_0_IW_ref_boundary_lev_2\ft_run\1\1.stdout: different "Memory Working Set Peak" (ft_run=821.0, ft_reference=77.29, rel.diff=962.23, criterion=0.5)

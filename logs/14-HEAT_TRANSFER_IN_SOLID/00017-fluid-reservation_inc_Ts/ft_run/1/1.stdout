@@ -4134,3 +4134,6 @@ alg :  symbolic_PardisoLU            0.000  1
 alg :  update_mg_status              0.000  150
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00017-fluid-reservation_inc_Ts/
+logs\14-HEAT_TRANSFER_IN_SOLID\00017-fluid-reservation_inc_Ts\ft_run\1\1.stdout: missing "Solver finished at"

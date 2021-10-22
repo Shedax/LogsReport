@@ -578,3 +578,5 @@ alg :  symbolic_PardisoLU            0.000  1
 alg :  update_mg_status              0.000  27
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00808-Net_asm_Neumann_solid_C_eq_0_MODIFIED/

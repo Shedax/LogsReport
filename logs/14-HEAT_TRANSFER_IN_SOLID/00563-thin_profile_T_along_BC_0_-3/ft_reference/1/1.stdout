@@ -655,3 +655,5 @@ alg :  symbolic_PardisoLU            0.115  1
 alg :  update_mg_status              0.000  65
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00563-thin_profile_T_along_BC_0_-3/

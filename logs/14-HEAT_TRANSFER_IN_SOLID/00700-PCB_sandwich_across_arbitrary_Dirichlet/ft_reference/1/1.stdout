@@ -598,3 +598,5 @@ alg :  symbolic_PardisoLU            0.145  1
 alg :  update_mg_status              0.000  48
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00700-PCB_sandwich_across_arbitrary_Dirichlet/

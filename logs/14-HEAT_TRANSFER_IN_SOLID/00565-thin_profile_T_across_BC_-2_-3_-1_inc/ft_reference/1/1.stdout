@@ -2612,3 +2612,5 @@ alg :  solve_MG                      0.013  25
 alg :  update_mg_status              0.000  30
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00565-thin_profile_T_across_BC_-2_-3_-1_inc/

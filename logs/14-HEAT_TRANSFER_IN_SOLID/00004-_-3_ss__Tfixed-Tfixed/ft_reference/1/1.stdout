@@ -606,3 +606,5 @@ alg :  symbolic_PardisoLU            0.149  1
 alg :  update_mg_status              0.000  36
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00004-_-3_ss__Tfixed-Tfixed/

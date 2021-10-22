@@ -1216,3 +1216,6 @@ slv :    Y_turb[0]:   min(239)=177.14426340242      , max(19)=282.54407760656
 slv :    Y_turb[1]:   min(176)=263129.87448386      , max(19)=650238.67266491      
 slv :    Y_term[0]:   min(0)=1                    , max(0)=1                    
 slv : nsd=0 
+
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00564-thin_profile_T_across_BC_-2_-3_-1_comp/
+logs\14-HEAT_TRANSFER_IN_SOLID\00564-thin_profile_T_across_BC_-2_-3_-1_comp\ft_run\1\1.stdout: missing "Solver finished at"

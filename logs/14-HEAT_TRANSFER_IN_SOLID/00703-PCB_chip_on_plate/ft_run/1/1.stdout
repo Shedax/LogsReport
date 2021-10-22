@@ -7986,3 +7986,5 @@ alg :  symbolic_PardisoLU            0.001  1
 alg :  update_mg_status              0.002  784
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00703-PCB_chip_on_plate/

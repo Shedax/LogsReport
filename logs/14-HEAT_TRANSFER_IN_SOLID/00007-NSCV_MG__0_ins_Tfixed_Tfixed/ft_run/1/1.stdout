@@ -599,3 +599,5 @@ alg :  solve_MG                      0.001  10
 alg :  update_mg_status              0.000  10
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00007-NSCV_MG__0_ins_Tfixed_Tfixed/

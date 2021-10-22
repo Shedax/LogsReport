@@ -1198,3 +1198,6 @@ alg :  solve_MG                      0.014  10
 alg :  update_mg_status              0.000  10
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 13-ROTATED_FLOWS/00043-RRF-Rotated_inflow_in_tube_2x2_ref_boundary/
+directory missing: ft_run

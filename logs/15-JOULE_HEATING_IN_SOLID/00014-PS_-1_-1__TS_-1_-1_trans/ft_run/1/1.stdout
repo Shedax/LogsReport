@@ -12264,3 +12264,5 @@ alg :  solve_MG                      0.080  500
 alg :  update_mg_status              0.000  500
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 15-JOULE_HEATING_IN_SOLID/00014-PS_-1_-1__TS_-1_-1_trans/

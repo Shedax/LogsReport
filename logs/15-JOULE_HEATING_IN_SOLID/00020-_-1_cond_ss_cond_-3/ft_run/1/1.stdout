@@ -701,3 +701,9 @@ alg :  solve_MG                      0.001  5
 alg :  update_mg_status              0.000  5
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 15-JOULE_HEATING_IN_SOLID/00020-_-1_cond_ss_cond_-3/
+logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\2\2.stdout: missing "Solver finished at"logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\3\3.stdout(440): slv : error: Isothermal cavitation pseudo transient corrector = -1
+logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\1\1.stdout: different "Total" of bricks (ft_run=15, ft_reference=21, rel.diff=28.57, criterion=0.1)
+logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\3\3.stdout: different "Memory Working Set Peak" (ft_run=128.18, ft_reference=28.18, rel.diff=354.86, criterion=0.5)
+logs\15-JOULE_HEATING_IN_SOLID\00020-_-1_cond_ss_cond_-3\ft_run\3\3.stdout: different "Total" of bricks (ft_run=25, ft_reference=21, rel.diff=19.05, criterion=0.1)

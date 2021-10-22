@@ -593,3 +593,9 @@ alg :  symbolic_PardisoLU            0.110  1
 alg :  update_mg_status              0.000  34
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00014-HWF_on_ins_ss/
+In ft_run there are missing files present in ft_reference: /5/5.stdout, /3/3.stdout
+In ft_run there are extra files not present in ft_reference: /4/4.stdout, /2/2.stdout
+logs\14-HEAT_TRANSFER_IN_SOLID\00014-HWF_on_ins_ss\ft_run\1\1.stdout(504): slv : error: Heat Transfer physical view 0
+logs\14-HEAT_TRANSFER_IN_SOLID\00014-HWF_on_ins_ss\ft_run\1\1.stdout: missing "Solver finished at"

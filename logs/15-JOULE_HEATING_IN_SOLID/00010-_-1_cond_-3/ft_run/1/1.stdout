@@ -563,3 +563,7 @@ alg :  solve_MG                      0.000  1
 alg :  update_mg_status              0.000  1
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 15-JOULE_HEATING_IN_SOLID/00010-_-1_cond_-3/
+logs\15-JOULE_HEATING_IN_SOLID\00010-_-1_cond_-3\ft_run\1\1.stdout(187): Loading mesh settings (global/local/SAR)... ERRor
+logs\15-JOULE_HEATING_IN_SOLID\00010-_-1_cond_-3\ft_run\1\1.stdout(404): slv : errOr Max number of outer iter = 1

@@ -3336,3 +3336,5 @@ alg :  solve_MG                      0.013  50
 alg :  update_mg_status              0.000  50
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 13-ROTATED_FLOWS/00090-GCS-radial_flow_ring/

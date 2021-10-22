@@ -1217,3 +1217,6 @@ alg :  solve_MG                      0.002  10
 alg :  update_mg_status              0.000  10
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 13-ROTATED_FLOWS/00060-RRF-u_R_0_IW/
+directory missing: ft_reference

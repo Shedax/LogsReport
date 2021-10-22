@@ -582,3 +582,5 @@ alg :  symbolic_PardisoLU            0.108  1
 alg :  update_mg_status              0.000  38
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 14-HEAT_TRANSFER_IN_SOLID/00101-Ball_ref1_Q_2nd_order_bc_-1/

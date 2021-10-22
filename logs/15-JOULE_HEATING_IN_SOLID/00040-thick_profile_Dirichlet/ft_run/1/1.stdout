@@ -750,3 +750,5 @@ alg :  symbolic_PardisoLU            0.000  1
 alg :  update_mg_status              0.000  19
 Free Geometry DB takes 0.000 s
 OK
+
+OK: 15-JOULE_HEATING_IN_SOLID/00040-thick_profile_Dirichlet/

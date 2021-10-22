@@ -604,3 +604,6 @@ alg :  symbolic_PardisoLU            0.202  1
 alg :  update_mg_status              0.000  71
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 14-HEAT_TRANSFER_IN_SOLID/00701-PCB_sandwich_along_arbitrary_Dirichlet/
+In ft_run there are extra files not present in ft_reference: /1/1.stdout

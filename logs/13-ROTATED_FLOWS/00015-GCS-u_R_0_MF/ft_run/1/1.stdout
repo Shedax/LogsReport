@@ -1184,3 +1184,6 @@ alg :  solve_MG                      0.002  10
 alg :  update_mg_status              0.000  10
 Free Geometry DB takes 0.000 s
 OK
+
+FAIL: 13-ROTATED_FLOWS/00015-GCS-u_R_0_MF/
+logs\13-ROTATED_FLOWS\00015-GCS-u_R_0_MF\ft_run\1\1.stdout(401): slv : error: Isothermal cavitation forced time step in cavitated regions = -1
