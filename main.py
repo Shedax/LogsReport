@@ -76,3 +76,57 @@ for i in os.listdir('logs'):
         #при отсутствие папки ft_run переходим к другому тесту
         except FileNotFoundError:
             continue
+
+for i in os.listdir('logs'):
+    for j in os.listdir('logs\\' + i):
+        try:
+            for k in os.listdir('logs' + '\\' + i + '\\' + j + '\\' + 'ft_run'):
+                with open(
+                        'logs' + '\\' + i + '\\' + j + '\\' + 'ft_run\\' + k + '\\' + '{0}'.format(k) + '.stdout',
+                        "r") as std:
+                    with open('logs' + '\\' + i + '\\' + j + '\\' + 'ft_reference\\' + k + '\\' + '{0}'.format(
+                            k) + '.stdout', "r") as std2:
+                        # считываем текст stdout из ft_run и ft_reference
+                        text1 = std.readlines()
+                        text2 = std2.readlines()
+                        # списки для хранения пиковых значений working set
+                        peak1 = []
+                        peak2 = []
+                        # списки для хранения значений Total
+                        total1 = []
+                        total2 = []
+                        for line in text1:
+                            if 'Memory Working Set Peak' in line:
+                                # запись в список значений Memory Working Set Peak из ft_run
+                                peak1.append(float(line.split('Memory Working Set Peak = ')[1].split(' Mb')[0]))
+                            if 'MESH::Bricks: Total=' in line:
+                                # запись в список значений MESH::Bricks: Total из ft_run
+                                total1.append(int(line.split('MESH::Bricks: Total=')[1].split(' Gas')[0]))
+                        for line2 in text2:
+                            if 'Memory Working Set Peak' in line2:
+                                # запись в список значений Memory Working Set Peak из ft_reference
+                                peak2.append(float(line2.split('Memory Working Set Peak = ')[1].split(' Mb')[0]))
+                            if 'MESH::Bricks: Total=' in line2:
+                                # запись в список значений MESH::Bricks: Total из ft_reference
+                                total2.append(int(line2.split('MESH::Bricks: Total=')[1].split(' Gas')[0]))
+                        # отличие Memory Working Set Peak
+                        difference = 100 * (max(peak1) - max(peak2)) / max(peak2)
+                        # отличие MESH::Bricks: Total
+                        difference2 = 100 * (total1[len(total1) - 1] - total2[len(total2) - 1]) / total2[
+                            len(total2) - 1]
+                        if abs(difference) > 50:
+                            with open('logs\\' + i + '\\' + j + '\\' + 'report.txt', 'a+') as rep:
+                                rep.write(
+                                    'logs' + '\\' + i + '\\' + j + '\\' + 'ft_run\\' + k + '\\' + '{0}'.format(k)
+                                    + '.stdout: different "Memory Working Set Peak" (ft_run=' + str(max(peak1)) +
+                                    ', ft_reference=' + str(
+                                        max(peak2)) + ', rel.diff=' + '%.2f' % abs(difference) + ', criterion=0.5)\n')
+                        if abs(difference2) > 10:
+                            with open('logs\\' + i + '\\' + j + '\\' + 'report.txt', 'a+') as rep:
+                                rep.write(
+                                    'logs' + '\\' + i + '\\' + j + '\\' + 'ft_run\\' + k + '\\' + '{0}'.format(k)
+                                    + '.stdout: different "Total" of bricks (ft_run=' + str(total1[len(total1) - 1])
+                                    + ', ft_reference=' + str(total2[len(total2) - 1]) + ', rel.diff=' + '%.2f' %
+                                    abs(difference2) + ', criterion=0.1)\n')
+        except FileNotFoundError:
+            continue
